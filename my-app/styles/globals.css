@@ -32,8 +32,20 @@ body {
 .elipse1 {
   width: 404px;
   height: 376.41px;
+  top: 0;
+  left: 0;
 }
 
-.elipse2 {}
+.elipse2 {
+  width: 720px;
+  height: 381.41px;
+  top: 566.92px;
+  left: 1138.78px;
+}
 
 .elipse3 {}
+
+.nav-list {
+  width: 499px;
+  height: 27px;
+}
