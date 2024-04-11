@@ -3,27 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --backgroud-color: 244, 243, 248;
+  --pink: 220, 1, 85, 1
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--backgroud-color))
 }
 
 @layer utilities {
@@ -31,3 +16,26 @@ body {
     text-wrap: balance;
   }
 }
+
+.header {
+  height: 120px;
+}
+
+.logo {
+  font-size: 36px;
+  height: 54px;
+  width: 82px;
+  line-height: 54px;
+  color: rgba(var(--pink));
+}
+
+.elipse1 {
+  width: 720px;
+  height: 381.41px;
+  top: -5px;
+  left: -316px;
+}
+
+.elipse2 {}
+
+.elipse3 {}
