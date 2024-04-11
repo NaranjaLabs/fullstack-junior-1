@@ -1,16 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { readFile } from 'fs/promises';
-
-type Job = {
-  id: number,
-  job: string,
-  level: string,
-  status: string,
-}
-
-type Error = {
-  message: string
-}
+import type { Job } from "@/types/Job";
+import type { Error } from "@/types/Error";
 
 type Data = Job[] | Error;
 
