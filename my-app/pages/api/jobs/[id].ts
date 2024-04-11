@@ -16,11 +16,6 @@ export default async function handler(
   res: NextApiResponse<Data>,
 ) {
   try {
-    const secret = req.headers.secret;
-    if (secret !== 'naranja-labs') {
-      return res.status(401).json({ message: "You don't have access to this route." })
-    }
-
     const { id } = req.query
     const job = await getJobById(Number(id));
     if (!job) return res.status(404).json({ message: 'Job not found.' });
