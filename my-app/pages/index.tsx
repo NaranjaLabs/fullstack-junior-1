@@ -26,8 +26,8 @@ export default function Home() {
           width={32}
         />
       </header>
-      <main className="pl-40">
-        <section className="flex mt-10">
+      <main className="pl-40 pr-4">
+        <section className="flex mt-10 upper-section overflow-visible justify-between">
           <section className="flex flex-col main-text-container">
             <p className={ `text-2xl leading-9 font-medium ${poppins.className} text-color` }>Hi, there!</p>
             <p className={ `${bebas.className} main-text` }><span className="color-pink">LUXE</span> IS HERE TO BE YOUR ASSISTANCE</p>
@@ -36,7 +36,7 @@ export default function Home() {
               Let’s Discuss
             </button>
           </section>
-          <Image className="overflow-visible" src="/image.png" alt="Image of portifolio owner " width={859} height={639}/>
+          <Image className="main-image" src="/image.png" alt="Image of portifolio owner " width={859} height={639}/>
         </section>
       </main>
     </>
