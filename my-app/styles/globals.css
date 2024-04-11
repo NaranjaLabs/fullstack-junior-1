@@ -4,7 +4,8 @@
 
 :root {
   --backgroud-color: 244, 243, 248;
-  --pink: 220, 1, 85, 1
+  --pink: 220, 1, 85, 1;
+  --font-color: 51, 51, 51;
 }
 
 body {
@@ -21,6 +22,10 @@ body {
   height: 120px;
 }
 
+.color-pink {
+  color: rgba(var(--pink));
+}
+
 .logo {
   font-size: 36px;
   height: 54px;
@@ -34,6 +39,7 @@ body {
   height: 376.41px;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .elipse2 {
@@ -41,13 +47,33 @@ body {
   height: 381.41px;
   top: 566.92px;
   left: 1138.78px;
+  z-index: -1;
 }
 
-.elipse3 {}
+.elipse3 {
+  z-index: -1;
+}
 
 .nav-list {
   width: 499px;
   height: 27px;
+}
+
+.text-color {
+  color: rgb(var(--font-color));
+}
+
+.main-text-container {
+  width: 784px;
+  height: 448px;
+}
+
+.main-text {
+  font-size: 120px;
+  line-height: 120px;
+  height: 240px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .contact-button {
@@ -56,4 +82,5 @@ body {
   height: 60px;
   border-radius: 32px;
   color: rgb(var(--backgroud-color));
+  margin-top: 48px;
 }

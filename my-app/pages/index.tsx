@@ -1,8 +1,9 @@
 import NavBar from "@/components/NavBar";
-import { Poppins } from "next/font/google";
+import { Poppins, Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 
-const poppins = Poppins({ weight: ["400", "600"], subsets: ['latin'] });
+const poppins = Poppins({ weight: ["400", "500", "600"], subsets: ['latin'] });
+const bebas = Bebas_Neue({ weight: ["400"], subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -11,13 +12,13 @@ export default function Home() {
         src="/elipse1.svg" alt="Ellipse 1" width={100} height={100}
         className="elipse1 absolute z-0"
       />
-      {/* <Image
+      <Image
         src="/elipse2.svg" alt="Ellipse 2" width={100} height={100}
         className="elipse2 absolute z-0"
-      /> */}
+      />
       <header className="header w-full flex items-center justify-between px-40">
         <h1 className={ `${poppins.className} logo font-semibold` }>Luxe</h1>
-        <NavBar className={ `${poppins.className}` } />
+        <NavBar className={ `${poppins.className} text-color` } />
         <Image
           alt="Menu Icon"
           src="/menuIcon.svg"
@@ -26,13 +27,16 @@ export default function Home() {
         />
       </header>
       <main className="pl-40">
-        <section>
-          <section className="flex">
-            <button className={ `leading-7 text-lg contact-button p-2 ${poppins.className} font-normal` }>
+        <section className="flex mt-10">
+          <section className="flex flex-col main-text-container">
+            <p className={ `text-2xl leading-9 font-medium ${poppins.className} text-color` }>Hi, there!</p>
+            <p className={ `${bebas.className} main-text` }><span className="color-pink">LUXE</span> IS HERE TO BE YOUR ASSISTANCE</p>
+            <p className={ `${poppins.className} font-normal text-2xl leading-10` }>I am here ready to help you in making creative digital products</p>
+            <button className={ `text-lg leading-7 contact-button p-2 ${poppins.className} font-normal` }>
               Let’s Discuss
             </button>
           </section>
-          <Image src="/mainImage.svg" alt="Image of portifolio owner " width={859} height={639}/>
+          <Image className="overflow-visible" src="/image.png" alt="Image of portifolio owner " width={859} height={639}/>
         </section>
       </main>
     </>
