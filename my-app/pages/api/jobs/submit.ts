@@ -52,7 +52,7 @@ const validateBody = (req: NextApiRequest): { statusCode: number, message: strin
     return { statusCode: 400, message: bodyConstraints[error as Fields].errorType };
   }
 
-  return { statusCode: 200, message: `teste`};
+  return { statusCode: 200, message: `Thank you for your application, ${req.body.name}`};
 }
 
 export default async function POST(
