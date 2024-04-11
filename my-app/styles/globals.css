@@ -49,3 +49,11 @@ body {
   width: 499px;
   height: 27px;
 }
+
+.contact-button {
+  background-color: rgba(var(--pink));
+  width: 180px;
+  height: 60px;
+  border-radius: 32px;
+  color: rgb(var(--backgroud-color));
+}

@@ -25,8 +25,15 @@ export default function Home() {
           width={32}
         />
       </header>
-      <main>
-        
+      <main className="pl-40">
+        <section>
+          <section className="flex">
+            <button className={ `leading-7 text-lg contact-button p-2 ${poppins.className} font-normal` }>
+              Let’s Discuss
+            </button>
+          </section>
+          <Image src="/mainImage.svg" alt="Image of portifolio owner " width={859} height={639}/>
+        </section>
       </main>
     </>
   );
