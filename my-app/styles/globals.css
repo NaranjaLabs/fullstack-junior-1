@@ -35,24 +35,28 @@ body {
   color: rgba(var(--pink));
 }
 
-.elipse1 {
-  width: 404px;
-  height: 376.41px;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.elipse2 {
+.ellipse1 {
   width: 720px;
   height: 381.41px;
-  top: 566.92px;
-  left: 1138.78px;
+  top: 0;
+  left: -0;
   z-index: -1;
 }
 
-.elipse3 {
+.ellipse2 {
+  width: 1080px;
+  height: 762.82px;
+  bottom: 0;
+  right: -100px;
   z-index: -1;
+}
+
+.ellipse3 {
+  z-index: -1;
+  width: 606.12px;
+  height: 321px;
+  bottom: -10px;
+  right: -100px;
 }
 
 .nav-list {
@@ -99,12 +103,15 @@ body {
 }
 
 .our-service {
+  margin-top: 125px;
   width: 1192px;
   height: 292px;
 }
 
 .service-title {
   line-height: 57.6px;
+  height: 58px;
+  width: 185px;
 }
 
 .service-card {

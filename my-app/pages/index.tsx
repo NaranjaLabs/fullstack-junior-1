@@ -10,12 +10,16 @@ export default function Home() {
   return (
     <>
       <Image
-        src="/elipse1.svg" alt="Ellipse 1" width={100} height={100}
-        className="elipse1 absolute z-0"
+        src="/ellipse1.svg" alt="Ellipse 1" width={100} height={100}
+        className="ellipse1 absolute object-cover overflow-visible"
       />
       <Image
-        src="/elipse2.svg" alt="Ellipse 2" width={100} height={100}
-        className="elipse2 absolute z-0"
+        src="/ellipse2.svg" alt="Ellipse 2" width={100} height={100}
+        className="ellipse2 absolute overflow-visible"
+      />
+      <Image
+        src="/ellipse3.svg" alt="Ellipse 3" width={100} height={100}
+        className="ellipse3 absolute object-fill overflow-visible"
       />
       <header className="header w-full flex items-center justify-between px-40">
         <h1 className={ `${poppins.className} logo font-semibold` }>Luxe</h1>
@@ -39,9 +43,9 @@ export default function Home() {
           </section>
           <Image className="main-image" src="/image.png" alt="Image of portifolio owner " width={859} height={639}/>
         </section>
-        <section className="our-service text-color">
+        <section className="our-service text-color flex flex-col justify-between">
           <h2 className={ `${bebas.className} font-normal text-5xl service-title` }>OUR SERVICE</h2>
-          <ul className="flex">
+          <ul className="flex justify-between">
             <ServiceCard
               imagePath="/branding.svg"
               title="Branding"
