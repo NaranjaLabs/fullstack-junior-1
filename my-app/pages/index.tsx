@@ -41,10 +41,16 @@ export default function Home() {
         </section>
         <section className="our-service text-color">
           <h2 className={ `${bebas.className} font-normal text-5xl service-title` }>OUR SERVICE</h2>
-          <ul>
+          <ul className="flex">
             <ServiceCard
               imagePath="/branding.svg"
               title="Branding"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              className={ poppins.className }
+            />
+            <ServiceCard
+              imagePath="/ui-design.svg"
+              title="UI/UX"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
               className={ poppins.className }
             />
