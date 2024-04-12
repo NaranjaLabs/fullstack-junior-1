@@ -29,6 +29,7 @@ export default function Home() {
           src="/menuIcon.svg"
           height={32}
           width={32}
+          className="cursor-pointer"
         />
       </header>
       <main className="pl-40 pr-4">
