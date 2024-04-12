@@ -54,6 +54,12 @@ export default function Home() {
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
               className={ poppins.className }
             />
+            <ServiceCard
+              imagePath="/product.svg"
+              title="Product Design"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              className={ poppins.className }
+            />
           </ul>
         </section>
       </main>

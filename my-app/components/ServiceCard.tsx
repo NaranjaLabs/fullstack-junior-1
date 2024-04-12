@@ -18,7 +18,7 @@ function ServiceCard({ imagePath, title, description, className }: Props) {
         height={64}
       />
       <div className='flex flex-col justify-between'>
-        <h4 className='font-medium text-2xl '>{title}</h4>
+        <h4 className='font-medium text-2xl w-fit leading-9'>{title}</h4>
         <p className='text-lg font-normal text-light-color service-description'>{ description }</p>
       </div>
     </div>
