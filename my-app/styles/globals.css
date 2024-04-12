@@ -92,3 +92,17 @@ body {
 .main-image {
   min-height: 639px;
 }
+
+.our-service {
+  width: 1192px;
+  height: 292px;
+}
+
+.service-title {
+  line-height: 57.6px;
+}
+
+.service-card {
+  width: 376px;
+  height: 186px;
+}

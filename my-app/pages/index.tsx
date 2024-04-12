@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import ServiceCard from "@/components/ServiceCard";
 import { Poppins, Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 
@@ -37,6 +38,16 @@ export default function Home() {
             </button>
           </section>
           <Image className="main-image" src="/image.png" alt="Image of portifolio owner " width={859} height={639}/>
+        </section>
+        <section className="our-service text-color">
+          <h2 className={ `${bebas.className} font-normal text-5xl service-title` }>OUR SERVICE</h2>
+          <ul>
+            <ServiceCard
+              imagePath="/branding.svg"
+              title="Branding"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            />
+          </ul>
         </section>
       </main>
     </>
