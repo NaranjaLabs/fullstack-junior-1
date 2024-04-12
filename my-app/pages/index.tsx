@@ -46,6 +46,7 @@ export default function Home() {
               imagePath="/branding.svg"
               title="Branding"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              className={ poppins.className }
             />
           </ul>
         </section>

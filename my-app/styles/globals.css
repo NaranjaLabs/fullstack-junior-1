@@ -6,6 +6,7 @@
   --backgroud-color: 244, 243, 248;
   --pink: 220, 1, 85, 1;
   --font-color: 51, 51, 51;
+  --light-font-color: 144, 144, 144;
 }
 
 body {
@@ -63,6 +64,10 @@ body {
   color: rgb(var(--font-color));
 }
 
+.text-light-color {
+  color: rgb(var(--light-font-color))
+}
+
 .upper-section {
   height: 448px;
 }
@@ -105,4 +110,13 @@ body {
 .service-card {
   width: 376px;
   height: 186px;
+}
+
+.service-card > div {
+  width: 300px;
+  height: 98px;
+}
+
+.service-description {
+  line-height: 27px;
 }
