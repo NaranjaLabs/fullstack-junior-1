@@ -79,6 +79,7 @@ body {
 .main-text-container {
   width: 784px;
   height: 448px;
+  margin-right: 46px;
 }
 
 .main-text {
@@ -96,10 +97,6 @@ body {
   border-radius: 32px;
   color: rgb(var(--backgroud-color));
   margin-top: 48px;
-}
-
-.main-image {
-  min-height: 639px;
 }
 
 .image-canva {

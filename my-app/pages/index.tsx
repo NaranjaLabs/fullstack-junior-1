@@ -1,3 +1,4 @@
+import MainImage from "@/components/MainImage";
 import NavBar from "@/components/NavBar";
 import ServiceCard from "@/components/ServiceCard";
 import { Poppins, Bebas_Neue } from "next/font/google";
@@ -33,7 +34,7 @@ export default function Home() {
         />
       </header>
       <main className="pl-40 pr-4">
-        <section className="flex mt-10 upper-section overflow-visible justify-between">
+        <section className="flex mt-10 upper-section overflow-visible">
           <section className="flex flex-col main-text-container">
             <p className={ `text-2xl leading-9 font-medium ${poppins.className} text-color` }>Hi, there!</p>
             <p className={ `${bebas.className} main-text` }><span className="color-pink">LUXE</span> IS HERE TO BE YOUR ASSISTANCE</p>
@@ -42,7 +43,7 @@ export default function Home() {
               Let’s Discuss
             </button>
           </section>
-          <Image className="main-image" src="/image.png" alt="Image of portifolio owner " width={859} height={639}/>
+          <MainImage />
         </section>
         <section className="our-service text-color flex flex-col justify-between">
           <h2 className={ `${bebas.className} font-normal text-5xl service-title` }>OUR SERVICE</h2>
