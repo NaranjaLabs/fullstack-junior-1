@@ -25,20 +25,13 @@ function MainImage() {
           height={176}
           className="absolute z-10 left-0 dotted-vertical-lines"
         />
-        {/* <Image
-          src="/image-components/ornament-vertical.svg"
-          alt="Dotted horizontal lines"
-          width={80}
-          height={176}
-          className="absolute z-10 dotted-horizontal-lines"
-        /> */}
-        {/* <Image
+        <Image
           src="/image-components/ornament-horizontal.svg"
           alt="Dotted horizontal lines"
           width={176}
           height={80}
           className="absolute z-10 dotted-horizontal-lines"
-        /> */}
+        />
         <Image
           src="/image-components/projects.svg"
           alt="Quantity of projects made (+2K)"
