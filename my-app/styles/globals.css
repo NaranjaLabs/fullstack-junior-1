@@ -102,6 +102,11 @@ body {
   min-height: 639px;
 }
 
+.image-canva {
+  width: 859px;
+  height: 639px;
+}
+
 .our-service {
   margin-top: 125px;
   width: 1192px;
@@ -126,4 +131,9 @@ body {
 
 .service-description {
   line-height: 27px;
+}
+
+.dark-spot {
+  top: 51px;
+  left: 113px;
 }
